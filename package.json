@@ -1,0 +1,34 @@
+{
+	"name": "list-multiple-polyfill",
+	"version": "0.2.0",
+	"description": "Polyfill for input with attributes list and multiple",
+	"main": "listMultiplePolyfill.mjs",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iiic/list-multiple-polyfill.git"
+	},
+	"keywords": [
+		"front-end",
+		"vanilla",
+		"vanilla-js",
+		"polyfill",
+		"javascript",
+		"ecmascript",
+		"shim",
+		"js",
+		"dom",
+		"mjs",
+		"multiple",
+		"list",
+		"input"
+	],
+	"author": "ic <ic.czech+npmjs@gmail.com> (https://iiic.dev/#npmjs)",
+	"license": "CC-BY-SA-4.0",
+	"bugs": {
+		"url": "https://github.com/iiic/list-multiple-polyfill/issues"
+	},
+	"homepage": "https://iiic.dev/list-multiple-polyfill#npmjs"
+}

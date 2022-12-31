@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>List Multiple polyfill - html example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		input {
+			/* only for demo */
+			display: block;
+			width: 500px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<p>Polyfill for input with attributes list and multiple</p>
+	<p>To add another value into input press comma (,)</p>
+	<br>
+	<p>For more info:</p>
+	<ul>
+		<li>Readme in standalone file <a href="/README.md">/README.md</a></li>
+		<li>Repo on <a href="https://github.com/iiic/list-multiple-polyfill">Github</a></li>
+		<li>Webpage about polyfill <a href="https://iiic.dev/list-multiple-polyfill">https://iiic.dev/list-multiple-polyfill</a></li>
+	</ul>
+
+	Emails:
+	<input type="email" list="emails" multiple>
+	<datalist id="emails">
+		<option value="first@example.com">
+		<option value="second@example.com">
+		<option value="third@example.com">
+		<option value="last@example.com">
+	</datalist>
+
+	Texts:
+	<input type="text" list="texts" multiple>
+	<datalist id="texts">
+		<option value="black">
+		<option value="gold">
+		<option value="grey">
+		<option value="pink">
+		<option value="turquoise">
+		<option value="red">
+		<option value="white">
+	</datalist>
+
+	<script type="module" src="listMultiplePolyfill.mjs" crossorigin="anonymous" integrity="sha256-u92fzHsXIk4Zsj80A29F47qxWHai0EDO4kf6gpCMa/g="></script>
