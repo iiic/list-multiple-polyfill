@@ -1,20 +1,15 @@
-# dialogic-polyfill
-JS module polyfill for HTML dialog element. Simple, easy to use, **No dependencies**, just vanilla js.
+# List Multiple Polyfill
+JS module polyfill for HTML input element with attributes list and multiple. This combination normally working only when input is type email, or file. But this polyfill make it works every possible type. Simple, easy to use, **No dependencies**, just vanilla js.
 
-Polyfill is in single javascript module file `dialogicPolyfill.mjs`. Include it into your site like this:
+Polyfill is in single javascript module file `listMultiplePolyfill.mjs`. Include it into your site like this:
 
 ``` html
-	<script type="module" src="/dialogicPolyfill.mjs" crossorigin="anonymous" integrity="sha256-tcuKQ/zHdgYxhMhX4ouXfqnqtOMXek83f//3owjsOe0="></script>
+	<script type="module" src="/listMultiplePolyfill.mjs" crossorigin="anonymous" integrity="sha256-u92fzHsXIk4Zsj80A29F47qxWHai0EDO4kf6gpCMa/g="></script>
 ```
 
-That's it! Now you can use dialog element like you know from specification [MDN: The Dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) and it will work even in browsers that doesn't have full support for dialog yet.
+That's it! Now you can use input element with multiple list.
 
-All other files like `example-usage.html` and `example.css` are there to help, but they are not needed for polyfill function.
-
-About `dialog` element
----------------------
-
-It's simple, status of dialog element is stored in `open` attribute, when this attribute is presented on element dialog is visually show. When not, dialog element is hidden. You can change status by native javascript functions `show()` and `close()` on `HTMLDialogElement`. Look into example file.
+All other files like `example-usage.html` are there to help, but they are not needed for polyfill function.
 
 More detail info
 ---------------
@@ -23,14 +18,17 @@ This polyfill is in js module, and modules are in default `defer` (even if you d
 
 You can change this default behaviour by adding attribute `async`, but yout can't make it synchronous.
 
-All browsers have `dialog` element styled, even if they didn't support function like `show()` and `close()`. (This is for example Firefox now).
+Possible problems?
+-----------------
+
+The mjs extension must have the correct mime type set to text/javascript, if it is too laborious, rename the suffix from .mjs to .js.
 
 Services
 --------
 
-Unpkg: https://unpkg.com/dialogic-polyfill
+Unpkg: https://unpkg.com/list-multiple-polyfill
 
-NPM: https://www.npmjs.com/package/dialogic-polyfill
+NPM: https://www.npmjs.com/package/list-multiple-polyfill
 
 
 # Licence
@@ -41,4 +39,4 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
 
 -------
 
-more info at https://iiic.dev/dialogic-polyfill
+more info at https://iiic.dev/list-multiple-polyfill
