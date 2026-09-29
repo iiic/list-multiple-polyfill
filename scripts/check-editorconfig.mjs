@@ -11,7 +11,7 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parse } from 'editorconfig';
 
-/** Files which are not written by hand, so they aren't checked. */
+/** Files which aren't checked. */
 const IGNORED_FILES = new Set( [
 	'LICENSE', // verbatim text of the licence
 ] );
