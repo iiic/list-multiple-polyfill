@@ -61,6 +61,8 @@ export default defineConfig( [
 		name: 'javascript/browser',
 		files: [ 'listMultiplePolyfill.mjs' ],
 		languageOptions: {
+			// syntax is limited to the same version as target in jsconfig.json, TypeScript checks only the APIs
+			ecmaVersion: 2019,
 			globals: globals.browser,
 		},
 	},
