@@ -1,10 +1,11 @@
 # List Multiple Polyfill
+
 JS module polyfill for HTML input element with attributes list and multiple. This combination normally working only when input is type email, or file. But this polyfill make it works every possible type. Simple, easy to use, **No dependencies**, just vanilla js.
 
 Polyfill is in single javascript module file `listMultiplePolyfill.mjs`. Include it into your site like this:
 
 ``` html
-	<script type="module" src="/listMultiplePolyfill.mjs" crossorigin="anonymous" integrity="sha256-u92fzHsXIk4Zsj80A29F47qxWHai0EDO4kf6gpCMa/g="></script>
+	<script type="module" src="/listMultiplePolyfill.mjs" crossorigin="anonymous" integrity="sha256-hSAGllmHcc3IudDa2Ym34HtQJtzB+e/9DSAO6bMJ7gg="></script>
 ```
 
 That's it! Now you can use input element with multiple list.
@@ -16,7 +17,7 @@ More detail info
 
 This polyfill is in js module, and modules are in default `defer` (even if you didn't add attribute `defer`), it means loaded asynchronously and executed after the document has been parsed.
 
-You can change this default behaviour by adding attribute `async`, but yout can't make it synchronous.
+You can change this default behaviour by adding attribute `async`, but you can't make it synchronous.
 
 Possible problems?
 -----------------
@@ -30,6 +31,14 @@ Unpkg: https://unpkg.com/list-multiple-polyfill
 
 NPM: https://www.npmjs.com/package/list-multiple-polyfill
 
+Development
+-----------
+
+After `npm install` all checks run automatically before every commit (git pre-commit hook) and on GitHub Actions after every push. Development needs Node.js 24 (or 22.22+).
+
+- `npm test` – checks run before commit: syntax and code style (ESLint, EditorConfig, Markdown, HTML), spelling, types (TypeScript), integrity hashes, version in the header of the polyfill, npm package and unit tests (jsdom) including 100 % code coverage
+- `npm run test:e2e` – tests of `example-usage.html` in real browsers (Chromium, Firefox and WebKit), install the browsers first by `npx playwright install`
+- `npm run fix` – fixes what can be fixed automatically, e.g. the integrity hashes after a change of the polyfill
 
 # Licence
 

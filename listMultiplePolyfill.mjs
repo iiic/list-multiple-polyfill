@@ -19,12 +19,12 @@ if ( inputsWithList && inputsWithList.length ) {
 			{
 
 				/** @type {HTMLInputElement} */
-				const input = event.target;
+				const input = /** @type {HTMLInputElement} */ ( event.target );
 
 				/** @type {HTMLDataListElement} */
 				const datalist = input.list;
 
-				/** @type {HTMLCollection} */
+				/** @type {HTMLCollectionOf<HTMLOptionElement>} */
 				const options = datalist.options;
 
 				if ( options && options.length ) {

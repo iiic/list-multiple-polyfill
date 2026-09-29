@@ -22,7 +22,17 @@ tab_width = 4
 indent_style = unset
 insert_final_newline = unset
 
-# 8 tabs (yea it's a lot) is default setting in Markdown (github interpretation), so with 8 tabs you have 1:1 source with compilated file
+# 8 tabs (yea it's a lot) is default setting in Markdown (github interpretation), so with 8 tabs you have 1:1 source with compiled file
 [*.{markdown,md}]
 indent_style = tab
 indent_size = 8
+
+# npm writes these files indented by 2 spaces
+[{package.json,package-lock.json}]
+indent_style = space
+indent_size = 2
+
+# YAML (e.g. GitHub workflows) doesn't allow tabs for indentation
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
