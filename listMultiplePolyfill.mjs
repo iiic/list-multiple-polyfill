@@ -21,11 +21,11 @@ if ( inputsWithList && inputsWithList.length ) {
 				/** @type {HTMLInputElement} */
 				const input = /** @type {HTMLInputElement} */ ( event.target );
 
-				/** @type {HTMLDataListElement} */
+				/** @type {HTMLDataListElement|null} */
 				const datalist = input.list;
 
 				/** @type {HTMLCollectionOf<HTMLOptionElement>} */
-				const options = datalist.options;
+				const options = datalist && datalist.options;
 
 				if ( options && options.length ) {
 					[ ...options ].forEach( function ( /** @type {HTMLOptionElement} */ option )

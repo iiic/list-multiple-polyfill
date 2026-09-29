@@ -221,14 +221,26 @@ describe( 'input[type=text][list][multiple]', function ()
 		assert.deepEqual( page.errors, [] );
 	} );
 
-	// remove skip after the bug is fixed
-	test( 'does not fail when the list attribute points to a missing datalist', { skip: 'known bug: input.list is null, so the listener throws TypeError' }, function ()
+	test( 'does not fail when the list attribute points to a missing datalist', function ()
 	{
 		const page = loadPage( '<input type="text" list="missing" multiple>' );
 		const input = page.input( 'input' );
 
 		page.type( input, 'a' );
 
+		assert.deepEqual( page.errors, [] );
+	} );
+
+	test( 'suggests options of a datalist added after the polyfill has run', function ()
+	{
+		const page = loadPage( '<input type="text" list="colors" multiple>' );
+		const input = page.input( 'input' );
+
+		page.type( input, 'black, ' );
+		input.insertAdjacentHTML( 'afterend', datalist( 'colors', COLORS ) );
+		page.type( input, 'g' );
+
+		assert.deepEqual( page.suggestions( input ), [ 'black, gold', 'black, grey' ] );
 		assert.deepEqual( page.errors, [] );
 	} );
 } );
