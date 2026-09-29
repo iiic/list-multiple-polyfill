@@ -1,0 +1,20 @@
+{
+	"$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/main/schema/markdownlint-cli2-config-schema.json",
+	"config": {
+		"default": true,
+		// tabs are the indentation style of this project (see .editorconfig)
+		"MD010": false,
+		// long lines are allowed, maximum is checked by max_line_length from .editorconfig
+		"MD013": false,
+		// README intentionally combines ATX (#) and setext (---) headings
+		"MD003": false,
+		// "Licence" is intentionally a top-level heading
+		"MD025": false,
+		// bare URLs are turned into links on GitHub and npm
+		"MD034": false,
+		// emphasized licence name is not meant as a heading
+		"MD036": false
+	},
+	"gitignore": true,
+	"globs": [ "**/*.md" ]
+}

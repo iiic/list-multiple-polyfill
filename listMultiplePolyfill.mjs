@@ -19,13 +19,13 @@ if ( inputsWithList && inputsWithList.length ) {
 			{
 
 				/** @type {HTMLInputElement} */
-				const input = event.target;
+				const input = /** @type {HTMLInputElement} */ ( event.target );
 
-				/** @type {HTMLDataListElement} */
+				/** @type {HTMLDataListElement|null} */
 				const datalist = input.list;
 
-				/** @type {HTMLCollection} */
-				const options = datalist.options;
+				/** @type {HTMLCollectionOf<HTMLOptionElement>} */
+				const options = datalist && datalist.options;
 
 				if ( options && options.length ) {
 					[ ...options ].forEach( function ( /** @type {HTMLOptionElement} */ option )
