@@ -5,7 +5,7 @@ JS module polyfill for HTML input element with attributes list and multiple. Thi
 Polyfill is in single javascript module file `listMultiplePolyfill.mjs`. Include it into your site like this:
 
 ``` html
-	<script type="module" src="/listMultiplePolyfill.mjs" crossorigin="anonymous" integrity="sha256-9e9DOSJg0UOfSuiOIDk2dU3ZZJpOGdG3wIog1jl82jw="></script>
+	<script type="module" src="/listMultiplePolyfill.mjs" crossorigin="anonymous" integrity="sha256-BGiGziOmO4ZsIWcI5EaT+ogQYyZ2/bhEUYc+VLfsM5Y="></script>
 ```
 
 That's it! Now you can use input element with multiple list.
