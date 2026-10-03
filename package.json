@@ -1,6 +1,6 @@
 {
   "name": "list-multiple-polyfill",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Polyfill for input with attributes list and multiple",
   "type": "module",
   "main": "listMultiplePolyfill.mjs",

@@ -2,7 +2,7 @@
  * Checks things which have to be kept in sync by hand:
  * 1) Subresource Integrity hashes (integrity="sha…") of the polyfill in README.md and example-usage.html
  *    must match the current content of listMultiplePolyfill.mjs, otherwise browsers refuse to run the script,
- * 2) @version in the header of the polyfill must match version in package.json (0.2 matches 0.2.0, 0.2.1, …).
+ * 2) @version in the header of the polyfill must match version in package.json (0.3 matches 0.3.0, 0.3.1, …).
  *
  * Usage: node scripts/check-consistency.mjs [--fix]
  * With --fix the integrity hashes are updated in place.

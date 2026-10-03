@@ -4,8 +4,8 @@
 * @author ic < ic.czech+github@gmail.com >
 * @see https://iiic.dev/list-multiple-polyfill
 * @license https://creativecommons.org/licenses/by-sa/4.0/legalcode.cs CC BY-SA 4.0
-* @since Q4 2022
-* @version 0.2
+* @since Q4 2026
+* @version 0.3
 */
 
 /** @type {NodeList} */
